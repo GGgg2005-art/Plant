@@ -1,0 +1,353 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+html
+    font-family: MontserraT
+    font-weight: regular
+
+*
+    box-sizing: border-box
+
+$green-color: #156963
+
+
+@font-face 
+    font-family: "MontserraT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+
+@font-face 
+    font-family: "MontserraT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+@font-face 
+    font-family: "MontserraT"
+    src: url('../fonts/Montserrat-Medium.ttf')
+    font-weight: medium
+    font-style: normal
+
+button
+    padding: 0
+    border: none
+    font: inherit
+    color: inherit
+    background-color: transparent
+
+
+.container
+    position: relative
+    max-width: 1168px
+    margin: 0 auto
+
+.main-section
+    overflow: hidden
+    padding-top: 42px
+    position: relative
+    min-height: 740px
+    margin-bottom: 142px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 102px
+    &__home-image
+        z-index: -1
+        position: absolute
+        top: 0%
+        left: 0%
+    &__block
+        max-width: 545px
+    &__title-container
+        display: flex
+        justify-content: flex-end 
+    &__title
+        font-size: 68px
+        color: $green-color
+        margin-bottom: 24px
+        font-weight: medium
+    &__text
+        max-width: 493px
+        font-size: 18px
+        color: #2C1500
+        font-weight: medium
+    &__slider-buttons
+        position: absolute
+        bottom: 0
+        right: 0
+
+.card-section
+    margin-bottom: 80px
+    &__container
+        display: flex
+        justify-content: space-between
+
+.card
+    width: 268px
+    height: 155px
+    border: 1px solid rgb(224, 224, 224)
+    padding-left: 16px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: start
+    &__icon
+        display: flex
+        align-items: center
+        margin-bottom: 16px
+        img
+            margin-right: 16px
+            width: 48px
+            height: 48px
+        h2
+            color: $green-color
+            font-size: 16px
+            font-weight: bold
+    p
+        font-size: 10px
+        font-weight: regular
+
+.nav-menu
+    display: flex
+    &__icons
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__list-item
+        margin-right: 40px
+        &:last-child
+            margin-right: 0
+
+
+.buttons
+    display: flex
+
+.button
+    width: 111px
+    height: 36px
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+        font-size: 14px
+        font-weight:700
+    &_white
+        background-color: #FFFFFF
+        p
+            color: $green-color
+
+    &_green
+        background-color: $green-color
+        p
+            color: #FFFFFF
+            
+
+
+
+.hexagon
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $green-color
+    border-radius: 14px
+    width: 36px
+    height: 36px
+    clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0)
+    p
+        color: white
+        font-size: 12px
+        font-weight: 900
+
+.slider-buttons
+    display: flex
+    width: 586px
+    height: 160px
+    &__prev
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 50%
+        background-color: #FFFFFF
+        h2
+            color: $green-color
+        img
+            margin-right: 8px
+    &__next
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 50%
+        background-color: $green-color
+        h2
+            color: #FFFFFF
+        p
+            margin-right: 8px
+        img
+            transform: scaleX(-1)
+    &__block
+        display: flex
+        flex-direction: column
+        justify-content: start
+            
+    &__slider
+        display: flex
+        flex-direction: row
+        margin-bottom: 12px
+        p
+            font-size: 24px
+            font-weight: medium
+
+
+            color: rgb(51, 51, 51)
+
+    &__title
+        font-size: 32px
+        font-weight: medium
+
+
+.featured
+    margin-bottom: 90px
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__sort
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        width: 130px
+        height: 30px
+        border: 1px solid rgb(224, 224, 224)
+        p
+            font-size: 12px
+            font-weight: medium
+    &__title
+        font-size: 20px
+        font-weight: medium
+    &__underline
+        border: 1px solid rgb(224, 224, 224)
+        margin-bottom: 24px
+
+
+.arrow
+    border: solid black
+    border-width: 2px 2px 0px 0px
+    display: block
+    width: 7px
+    height: 7px
+    transform: rotate(135deg)
+
+
+.articles
+    display: flex
+    justify-content: space-between
+
+
+.article
+    &__image
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 217px
+        width: 217px
+        background-color: #F3F4F6
+        overflow: hidden
+        margin-bottom: 16px
+
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        line-height: 1.45
+
+    &__title
+        font-size: 16px
+
+    &__price
+        font-style: 16px
+        font-weight: bold
+
+
+.third-section
+    margin-bottom: 80px
+    &__container
+        min-height: 609px
+        display: flex
+        justify-content: space-between
+        
+    &__left-wrapper
+        max-width: 522px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        h1
+            font-size: 40px
+            font-weight: bold
+            margin-bottom: 16px
+        p
+            font-size: 16px
+            font-weight: regular
+            margin-bottom: 72px
+        img
+            height: 250px
+            justify-self: flex-end
+.fourth-section
+    margin-bottom: 80px
+
+    &__container
+        display: flex
+        justify-content: space-evenly
+        min-height: 360px
+        background-color: #F3F4F6
+    &__title
+        font-size: 40px
+        margin-bottom: 32px
+    &__visit
+        display: flex
+        justify-content: center
+        flex-direction: column
+.footer
+    border: 1px solid rgba(21, 105, 99, 0.3)
+    
+    &__container
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        align-items: center
+        min-height: 268px
+    h3
+        font-size: 14px
+        margin-bottom: 10px
+    &__first-section
+        h3:first-child
+            font-size: 16px
+        h2
+            color: #156963
+            font-size: 24px
+            font-weight: medium
+            margin-bottom: 24px
+        p
+            max-width: 282px
+            font-size: 13px
+            color: #4F4F4F
+    &__second-section
+        h3:first-child
+            font-size: 16px
+            
+    &__third-section
+        h3:first-child
+            font-size: 16px
+        input
+            width: 120%
+            min-height: 32px
+            border: 1px solid rgb(242, 242, 242)
+            border-radius: 2px
+            margin-bottom: 14px
+
+
